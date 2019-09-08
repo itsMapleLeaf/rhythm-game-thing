@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="New Game Project"
-run/main_scene="res://screens/test.tscn"
+run/main_scene="res://game.tscn"
 
 [display]
 
