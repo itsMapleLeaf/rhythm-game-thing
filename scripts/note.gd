@@ -1,7 +1,7 @@
 extends Sprite
 class_name Note
 
-var note_texture = load("res://images/icon.png")
+var note_texture = load("res://images/note.png")
 
 var time = 0
 var hit = false
