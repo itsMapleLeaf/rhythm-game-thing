@@ -3,7 +3,7 @@ class_name Note
 
 var note_texture = load("res://images/note.png")
 
-var time = 0
+var song_time = 0
 var hit = false
 
 func handle_hit():

@@ -25,7 +25,7 @@ func handle_touch(tap_position: Vector2, song_time: float) -> bool:
 		if note.hit: continue
 		
 		var distance = note.global_position.distance_to(tap_position)
-		var timing = abs(song_time - note.time)
+		var timing = abs(song_time - note.song_time)
 		
 		if distance < 100 and timing < TIMING_WINDOW:
 			note.handle_hit()
@@ -68,7 +68,7 @@ func _create_notes():
 	
 		var note_instance = Note.new()
 		note_instance.position = Vector2(x, y)
-		note_instance.time = note_song_time
+		note_instance.song_time = note_song_time
 		
 		notes_container.add_child(note_instance)
 		
